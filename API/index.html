@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta name="description" content="A responsive movie poster grabber">
+   <title>Movie Search</title>
+   <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+   <script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
+   <!--<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>-->
+   <script src="./main.js"></script>
+   <link rel="stylesheet" href="style.css" />
+   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	 <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+	 <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+</head>
+<body>
+  <h1>Films of Studio Ghibli API</h1>
+<div class="container">
+  <nav>
+    <form id="form">
+      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+        <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="term">
+        <label class="mdl-textfield__label" for="sample4">Type an ID (<20)</label>
+        <span class="mdl-textfield__error">Input is not a number!</span>
+      </div>
+
+      <button id="search" class="mdl-button mdl-js-button mdl-js-ripple-effect" type="submit">
+        Search
+      </button>
+      <!--<input id="search" type="submit" value="Go!">-->
+    </form>
+  </nav>
+  <center>
+  <div class="demo-card-wide mdl-card mdl-shadow--2dp">
+    <div class="mdl-card__supporting-text">
+      <section id="result">
+
+      </section>
+    </div>
+  </div>
+</center>
+</div>
+</body>
+</html>

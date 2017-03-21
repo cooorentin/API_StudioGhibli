@@ -1,0 +1,15 @@
+body{
+  color: white;
+  background-color: black;
+  background-image: url(background.jpg);
+  font-family: Verdana, sans-serif;
+  text-align: center;
+}
+
+.demo-card-wide.mdl-card {
+  width: 800px;
+}
+
+label{
+  color: white;
+}
